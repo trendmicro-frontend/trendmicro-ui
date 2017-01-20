@@ -258,16 +258,16 @@
 	                                _react2.default.createElement(
 	                                    'p',
 	                                    null,
-	                                    'Use a smaller font to create a secondary heading. We often see this in our product names.'
+	                                    'Use smaller font to create a secondary heading like product name.'
 	                                ),
 	                                _react2.default.createElement(
 	                                    'h1',
 	                                    null,
-	                                    'Trend Micro Frontend Style ',
+	                                    'Trend Micro UI ',
 	                                    _react2.default.createElement(
 	                                        'small',
 	                                        null,
-	                                        'for Commercial'
+	                                        'for Enterprise'
 	                                    )
 	                                )
 	                            )
@@ -21733,8 +21733,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?-autoprefixer!./index.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?-autoprefixer!./index.css");
+			module.hot.accept("!!./../node_modules/css-loader/index.js?-autoprefixer!./../node_modules/stylus-loader/index.js!./../node_modules/stylint-loader/index.js!./index.styl", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js?-autoprefixer!./../node_modules/stylus-loader/index.js!./../node_modules/stylint-loader/index.js!./index.styl");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -22115,4 +22115,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=bundle.js.map?abb6a73afc586ecbddb0
+//# sourceMappingURL=bundle.js.map?a36c97895f3a6b72b61c

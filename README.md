@@ -1,21 +1,33 @@
-# Trend Micro Frontend Style [![build status](https://travis-ci.org/trendmicro-frontend/style.svg?branch=master)](https://travis-ci.org/trendmicro-frontend/style) [![Coverage Status](https://coveralls.io/repos/github/trendmicro-frontend/style/badge.svg?branch=master)](https://coveralls.io/github/trendmicro-frontend/style?branch=master)
+# Trend Micro UI [![build status](https://travis-ci.org/trendmicro-frontend/trendmicro-ui.svg?branch=master)](https://travis-ci.org/trendmicro-frontend/trendmicro-ui) [![Coverage Status](https://coveralls.io/repos/github/trendmicro-frontend/trendmicro-ui/badge.svg?branch=master)](https://coveralls.io/github/trendmicro-frontend/trendmicro-ui?branch=master)
 
-[![NPM](https://nodei.co/npm/@trendmicro/style.png?downloads=true&stars=true)](https://nodei.co/npm/@trendmicro/style/)
+[![NPM](https://nodei.co/npm/@trendmicro/trendmicro-ui.png?downloads=true&stars=true)](https://nodei.co/npm/@trendmicro/trendmicro-ui/)
 
-Trend Micro Frontend Style
+A tailor-made CSS styles for creating a user interface according to Trend Micro UI style guides.
 
-Demo: https://trendmicro-frontend.github.io/style
+Demo: https://trendmicro-frontend.github.io/trendmicro-ui
 
-## Installation
+## Getting Started
 
+### Standalone Build
+
+Go to https://github.com/trendmicro-frontend/trendmicro-ui/releases and download the zip file. It contains minified CSS and fonts ready for production use.
+
+Then, include these scripts into your html file:
+```html
 ```
-npm install --save @trendmicro/style
+
+### Via webpack or browserify (recommended)
+
+You can install trendmicro-ui from npm and include it in your build process using webpack or browserify.
+
+```bash
+npm install --save trendmicro-ui
 ```
 
-Import `@trendmicro/style/dist/css/index.css` in your application as below:
+**In your application**
 
 ```js
-import '@trendmicro/style/dist/css/index.css';
+import 'trendmicro-ui/dist/css/trendmicro-ui.css';
 ```
 
 ## License

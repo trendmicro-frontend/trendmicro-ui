@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import '../dist/css/index.css';
+import '../src/index.styl';
 
 class App extends Component {
     render() {
@@ -52,8 +52,8 @@ class App extends Component {
                         </div>
                         <div className="example">
                             <div className="typography-example">
-                                <p>Use a smaller font to create a secondary heading. We often see this in our product names.</p>
-                                <h1>Trend Micro Frontend Style <small>for Commercial</small></h1>
+                                <p>Use smaller font to create a secondary heading like product name.</p>
+                                <h1>Trend Micro UI <small>for Enterprise</small></h1>
                             </div>
                         </div>
                     </div>

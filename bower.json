@@ -1,14 +1,17 @@
 {
-  "name": "@trendmicro/style",
-  "description": "Trend Micro Frontend Style",
+  "name": "trendmicro-ui",
+  "description": "A tailor-made CSS styles for creating a user interface according to Trend Micro UI style guides.",
   "authors": [
     "Cheton Wu <cheton_wu@trend.com.tw>"
   ],
-  "homepage": "https://github.com/trendmicro-frontend/style",
+  "homepage": "https://github.com/trendmicro-frontend/trendmicro-ui",
   "snapshots": [],
   "keywords": [
     "trendmicro",
+    "ui",
+    "css",
     "style",
+    "guides",
     "typography"
   ],
   "license": "MIT"
