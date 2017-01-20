@@ -2,11 +2,7 @@
   "name": "@trendmicro/style",
   "description": "Trend Micro Frontend Style",
   "authors": [
-    {
-      "name": "",
-      "email": "",
-      "homepage": "https://github.com/trendmicro-frontend"
-    }
+    "Cheton Wu <cheton_wu@trend.com.tw>"
   ],
   "homepage": "https://github.com/trendmicro-frontend/style",
   "snapshots": [],
