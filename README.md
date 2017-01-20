@@ -2,7 +2,7 @@
 
 [![NPM](https://nodei.co/npm/trendmicro-ui.png?downloads=true&stars=true)](https://nodei.co/npm/trendmicro-ui/)
 
-A tailor-made CSS styles for creating a user interface according to Trend Micro UI style guides.
+CSS styles for creating a user interface according to Trend Micro UI style guides.
 
 Demo: https://trendmicro-frontend.github.io/trendmicro-ui
 

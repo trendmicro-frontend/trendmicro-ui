@@ -1,6 +1,6 @@
 {
   "name": "trendmicro-ui",
-  "description": "A tailor-made CSS styles for creating a user interface according to Trend Micro UI style guides.",
+  "description": "CSS styles for creating a user interface according to Trend Micro UI style guides.",
   "authors": [
     "Cheton Wu <cheton_wu@trend.com.tw>"
   ],
