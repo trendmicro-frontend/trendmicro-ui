@@ -1,7 +1,7 @@
 {
   "name": "@trendmicro/style",
   "version": "0.1.0",
-  "description": "Trend Micro Style",
+  "description": "Trend Micro Frontend Style",
   "files": [
     "dist"
   ],
