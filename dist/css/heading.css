@@ -1,0 +1,146 @@
+h1,
+.h1 {
+  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-weight: 200;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #222;
+  letter-spacing: -0.02em;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1 small,
+.h1 small,
+h1 .small,
+.h1 .small {
+  font-size: 70%;
+  font-weight: normal;
+  line-height: 1;
+  color: #666;
+}
+h2,
+.h2 {
+  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #222;
+  letter-spacing: -0.02em;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h2 small,
+.h2 small,
+h2 .small,
+.h2 .small {
+  font-size: 70%;
+  font-weight: normal;
+  line-height: 1;
+  color: #666;
+}
+h3,
+.h3 {
+  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #222;
+  letter-spacing: -0.02em;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h3 small,
+.h3 small,
+h3 .small,
+.h3 .small {
+  font-size: 70%;
+  font-weight: normal;
+  line-height: 1;
+  color: #666;
+}
+h4,
+.h4 {
+  line-height: 1.5;
+  color: #222;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+h5,
+.h5 {
+  line-height: 1.5;
+  color: #222;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+h6,
+.h6 {
+  line-height: 1.5;
+  color: #222;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.title {
+  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #222;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.display1 {
+  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #222;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.display2 {
+  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-weight: 200;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #222;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.display3 {
+  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #222;
+  letter-spacing: -0.03em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.display4 {
+  font-family: Interstate-ExtraLight, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #222;
+  letter-spacing: -0.03em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,18 @@
+.text-primary {
+  color: #222;
+}
+.text-error {
+  color: #db3d44;
+}
+.text-warning {
+  color: #ff7633;
+}
+.text-muted {
+  color: #999;
+}
+.text-disabled {
+  color: #bbb;
+}
+.text-link {
+  color: #0096cc;
+}

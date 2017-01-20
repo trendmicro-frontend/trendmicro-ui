@@ -1,0 +1,59 @@
+ul,
+ol {
+  padding-left: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  margin-left: 21px;
+}
+.list-inline > li:first-child {
+  margin-left: 0;
+}
+.list-inline > li a {
+  text-decoration: none;
+}
+.list-inline > li a:hover,
+.list-inline > li a:focus {
+  text-decoration: underline;
+}
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+dt,
+dd {
+  line-height: 24px;
+}
+dd {
+  margin-left: 0;
+}
+.dl-horizontal dt {
+  color: #888;
+}
+@media (min-width: 768px) {
+  .dl-horizontal dt {
+    float: left;
+    clear: left;
+    text-align: left;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

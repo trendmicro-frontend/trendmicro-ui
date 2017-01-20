@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv-"X-UA-Compatible" content="IE=edge">
+<title>Trend Micro Style</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    background: #eee;
+}
+.site-header {
+    position: relative;
+    padding: 0 20px;
+    height: 64px;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-bottom: 1px #ddd solid;
+}
+.site-header a:link,
+.site-header a:hover,
+.site-header a:active,
+.site-header a:visited,
+.site-header a:focus {
+    color: #222;
+}
+.site-header .banner,
+.site-header .banner:hover {
+    text-decoration: none;
+}
+.site-header .banner {
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzZweCIgaGVpZ2h0PSIzNnB4IiB2aWV3Qm94PSIwIDAgMzYgMzYiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDM2IDM2IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBmaWxsPSIjRUQxQzI0IiBkPSJNMy4yNzgsMjEuNDM4YzAuMDA3LTAuMDIxLDAuMDE0LTAuMDM4LDAuMDIzLTAuMDYyYzAuMDIxLTAuMDYyLDAuMDQ4LTAuMTI5LDAuMDcyLTAuMTkyDQoJCQljMC4wMjEtMC4wNiwwLjA0NS0wLjExNSwwLjA2Ny0wLjE3NWMwLjAxMS0wLjAyNiwwLjAyMi0wLjA1NSwwLjAzMi0wLjA3OWMwLjMzNS0wLjgyOSwwLjc1OC0xLjY4MSwxLjI3LTIuNTQzDQoJCQljMC4wNjctMC4xNDQsMC4xMzUtMC4yODQsMC4yMDUtMC40MjdsLTIuMTU1LDAuMDA2bDAuNTIzLTEuMTU0YzEuNzgtMC40ODYsNC43NS0xLjQ3OSw3LjU4Mi00LjIyN2wwLjA4NC0wLjAwNmgxLjQ5MQ0KCQkJbC0xLjkyOCw0LjEzM2wzLjA5OS0wLjAxbC0wLjU2OSwxLjIzbC0zLjA5MiwwLjAxMWMwLDAtMS40NTEsMi45MDEtMS45NDMsNC45NzZjLTAuMzgzLDIuMzE0LTAuMDA2LDQuMDQ1LDIuMDY3LDQuNjg5DQoJCQljMS4yODEsMC4zOTYsMi44OCwwLjMwNyw0LjYwMy0wLjE4YzQuMDExLTEuMjUsOC4yOTUtNC4wMDYsMTEuNDMxLTcuNjU0YzUuMTYyLTUuOTk3LDUuMjY1LTEyLjEzLDAuMjI4LTEzLjY5Nw0KCQkJQzIzLjE0LDUuMDcyLDE4LjU4NSw2LjE4OCwxNC4zNyw4LjcwMkMxOS42MjQsNS4zMSwyNS40MDMsMy43MiwyOS4zOTIsNC45NmMwLjc0OCwwLjIzMywxLjM5NSwwLjU1NCwxLjk0NSwwLjk0OQ0KCQkJYy0zLjI5My0zLjYzMi04LjA1MS01LjkxLTEzLjM0LTUuOTFjLTkuOTM4LDAtMTcuOTk4LDguMDU5LTE3Ljk5OCwxNy45OThjMCwzLjY3LDEuMSw3LjA4NCwyLjk4NCw5LjkzMg0KCQkJQzIuMjcxLDI2LjE2OSwyLjM3MSwyMy45MTUsMy4yNzgsMjEuNDM4eiIvPg0KCQk8cGF0aCBmaWxsPSIjRUQxQzI0IiBkPSJNMzMuMjYxLDguNDUyYzEuMjAzLDMuMjY5LTAuMzAzLDguMTUxLTQuNDYsMTIuOTgyYy02LjI0MSw3LjI1OC0xNi4xMDMsMTEuNjQ4LTIyLjAxOSw5LjgwNQ0KCQkJYy0wLjczNi0wLjIyNy0xLjM3My0wLjU0My0xLjkxNi0wLjkzMmMzLjI4NCwzLjUwNCw3Ljk1MSw1LjY5MywxMy4xMzEsNS42OTNjOS45NDMsMCwxOC4wMDQtOC4wNiwxOC4wMDQtMTgNCgkJCUMzNi4wMDEsMTQuNDkxLDM0Ljk5MywxMS4yMTksMzMuMjYxLDguNDUyeiIvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K)
+        center left no-repeat;
+    background-size: 32px;
+    float: left;
+    height: 63px;
+    padding: 0;
+}
+.site-title {
+    margin: 14px 0 0 42px;
+    line-height: 36px;
+    font-family: "Interstate-Light", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+}
+.btn {
+    display: inline-block;
+    min-width: 80px;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 5px 12px;
+    font-size: 13px;
+    line-height: 20px;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.btn-border {
+    color: #222222;
+    background-image: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
+    border-color: #cccccc;
+    background-color: #fff;
+    transition: all 0.2s linear 0s;
+    background-image: none!important;
+}
+.btn-border:hover,
+.btn-border.hover {
+    color: #222222;
+    background-color: #f4f4f4;
+    background-image: linear-gradient(to bottom, #f4f4f4 0%, #f4f4f4 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff4f4f4', endColorstr='#fff4f4f4', GradientType=0);
+    border-color: #999999;
+}
+#container {
+    padding: 20px;
+}
+section {
+    background: #fff;
+    border: 1px solid #d6d6d6;
+    position: relative;
+    padding: 0 16px;
+}
+.typography-example .row {
+    margin: 0 0 24px 0;
+}
+.typography-example .row:first-of-type {
+    margin-top: 24px;
+}
+.typography-example .row > label {
+    display: inline-block;
+    width: 95px;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.typography-example .row span,
+.typography-example .row h1,
+.typography-example .row h2,
+.typography-example .row h3,
+.typography-example .row h4,
+.typography-example .row h5,
+.typography-example .row h6 {
+    display: inline-block;
+    margin: 0 !important;
+    vertical-align: middle;
+}
+@media (max-width: 1325px) {
+  .typography-example .row {
+      margin-bottom: 6px;
+  }
+  .typography-example .row > label,
+  .typography-example .row span,
+  .typography-example .row h1,
+  .typography-example .row h2,
+  .typography-example .row h3,
+  .typography-example .row h4,
+  .typography-example .row h5,
+  .typography-example .row h6 {
+      display: block;
+  }
+  .typography-example .row:first-of-type {
+      margin-top: 12px;
+  }
+}
+@media (max-width: 1240px) {
+    .typography-example .row {
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 1075px) {
+    .typography-example .row {
+        margin-bottom: 1px;
+    }
+}
+.example {
+    position: relative;
+    padding: 45px 0 15px;
+    margin-bottom: 20px;
+}
+.example:after {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    font-size: 14px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    content: "Example";
+}
+.example:last-child {
+    margin-bottom: 0;
+}
+</style>
+</head>
+<body>
+    <header class="site-header" role="header">
+        <a href="#" class="banner">
+            <h1 class="site-title">Trend Micro Style</h1>
+        </a>
+        <div class="pull-right" style="margin-top: 15.5px">
+            <a
+                class="btn btn-border"
+                href="https://github.com/trendmicro-frontend/style"
+                style="text-decoration: none"
+            >
+                <i class="fa fa-github fa-fw" style="font-size: 16px"></i>
+                GitHub
+            </a>
+        </div>
+    </header>
+    <div id="container"></div>
+<script type="text/javascript" src="bundle.js?bc7733e74ce38687cff1"></script></body>
+</html>
