@@ -263,7 +263,7 @@
 	                                _react2.default.createElement(
 	                                    'h1',
 	                                    null,
-	                                    'Trend Micro Style ',
+	                                    'Trend Micro Frontend Style ',
 	                                    _react2.default.createElement(
 	                                        'small',
 	                                        null,
@@ -22115,4 +22115,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=bundle.js.map?bc7733e74ce38687cff1
+//# sourceMappingURL=bundle.js.map?abb6a73afc586ecbddb0

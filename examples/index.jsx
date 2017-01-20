@@ -53,7 +53,7 @@ class App extends Component {
                         <div className="example">
                             <div className="typography-example">
                                 <p>Use a smaller font to create a secondary heading. We often see this in our product names.</p>
-                                <h1>Trend Micro Style <small>for Commercial</small></h1>
+                                <h1>Trend Micro Frontend Style <small>for Commercial</small></h1>
                             </div>
                         </div>
                     </div>
