@@ -19,3 +19,21 @@ before_install:
 after_success:
   - npm run coveralls
   - npm run coverage-clean
+
+before_deploy:
+  - echo "Deploying to GitHub releases"
+  - ls -al releases
+
+deploy:
+  provider: releases
+  api_key:
+    secure: "g6G5+dtF/IjlzHcAz140ZQt/qukl7iHyHHRyO7BOQe2GYTW7EvO/5igwRQOlqnzKX6iu52NA5ziNV5cdIHA0vPmSF0zaFk+ulddUGHbU7kI+LVL4WY+pUE/MfS9gCEAepOKrJTQ72WgD705rz1Wdrodn4jvZaA9X0I9lD5lPtfoP55dYtHxPhyxT6JpJWWNXdSZj2+w/2nUQmd5Ka/wlGi/YOU9WfdWI/ZFq47oPYxP7k/XpSuei4VkuKhy4FzXKk2WsV/Z3HC9MZFTtwqDlnKiRyFXo9eiTM7ro+VsQAy2gKaLku+Lf9RobG6ApRqjdHAD3MpYooc1YTDkVldrRvKrEv2TEVzf5VnfAYeMirS9HzObbfC2VCUlsvjUhZW4cdvdrRtSOxiw7YPxdYWp+EgUI5i//1z4r9ELstSbZL+gAhf9yq09ex8GVWBUiW7AGZs5KBj32UrK/f407nR2QLdsYUTgwcHVcIJEJMqym/6I3QRE4mtlxgSL8RyHBOkptE5jTDFOWaXaAGQQXXzzk7ba5ktkKUDCYwR8d8+aa1/J8QFSTgzigvJzaVTRgdj240qBwCLp1L2QQ95LZ/rsVK6u8c7gbKzNdNlnz0S+gnRNavAscWKUP8fDF2E9dmw65PIgMPXC8QC0ylm0iSj5YT/xNdqhjtr98D2YwOVQsrgE="
+  file_glob: true
+  file:
+    - 'releases/*.*'
+  overwrite: true
+  skip_cleanup: true
+  on:
+    # https://docs.travis-ci.com/user/deployment#Conditional-Releases-with-on
+    tags: true  # Deploy app only when a tag is applied to the commit
+    node: '4'
