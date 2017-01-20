@@ -10,13 +10,9 @@ Demo: https://trendmicro-frontend.github.io/trendmicro-ui
 
 ### Standalone Build
 
-Go to https://github.com/trendmicro-frontend/trendmicro-ui/releases and download the zip file. It contains minified CSS and fonts ready for production use.
+Go to https://github.com/trendmicro-frontend/trendmicro-ui/releases, and download a zip file containing minified CSS and fonts ready for production use.
 
-Then, include these scripts into your html file:
-```html
-```
-
-### Via webpack or browserify (recommended)
+### Webpack or Browserify (recommended)
 
 You can install trendmicro-ui from npm and include it in your build process using webpack or browserify.
 
