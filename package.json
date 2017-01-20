@@ -6,12 +6,13 @@
     "dist"
   ],
   "scripts": {
-    "prepublish": "npm run lint && npm test && npm run clean && npm run bowersync && npm run build",
+    "prepublish": "npm run lint && npm test && npm run clean && npm run bowersync && npm run build && npm run release",
     "bowersync": "./scripts/bowersync",
     "build": "npm run build-css && npm run build-fonts && npm run build-examples",
-    "build-css": "mkdir -p dist/css && npm run stylus -- -o dist/css src/*.styl",
+    "build-css": "mkdir -p dist/css && npm run stylus -- -o dist/css src/*.styl && npm run stylus -- -o dist/css/index.min.css src/index.styl",
     "build-fonts": "mkdir -p dist/fonts && cp -af fonts/* dist/fonts",
     "build-examples": "cd examples; webpack",
+    "release": "mkdir -p releases; rm -f releases/*; cp -f dist/css/index.css releases/tm-style-minimalism-${npm_package_version}.css; cp -f dist/css/index.min.css releases/tm-style-minimalism-${npm_package_version}.min.css; cp -f dist/fonts/* releases/",
     "clean": "rm -f lib/*",
     "demo": "http-server -p 8000 docs/",
     "lint": "npm run eslint && npm run stylint",
