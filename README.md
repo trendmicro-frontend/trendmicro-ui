@@ -1,6 +1,6 @@
 # Trend Micro UI [![build status](https://travis-ci.org/trendmicro-frontend/trendmicro-ui.svg?branch=master)](https://travis-ci.org/trendmicro-frontend/trendmicro-ui) [![Coverage Status](https://coveralls.io/repos/github/trendmicro-frontend/trendmicro-ui/badge.svg?branch=master)](https://coveralls.io/github/trendmicro-frontend/trendmicro-ui?branch=master)
 
-[![NPM](https://nodei.co/npm/@trendmicro/trendmicro-ui.png?downloads=true&stars=true)](https://nodei.co/npm/@trendmicro/trendmicro-ui/)
+[![NPM](https://nodei.co/npm/trendmicro-ui.png?downloads=true&stars=true)](https://nodei.co/npm/trendmicro-ui/)
 
 A tailor-made CSS styles for creating a user interface according to Trend Micro UI style guides.
 
