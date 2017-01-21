@@ -12,7 +12,7 @@
     "build-css": "mkdir -p dist/css && npm run stylus -- -o dist/css/trendmicro-ui.css src/index.styl && npm run stylus -- -c -o dist/css/trendmicro-ui.min.css src/index.styl",
     "build-fonts": "mkdir -p dist/fonts && cp -af fonts/* dist/fonts",
     "build-examples": "cd examples; webpack",
-    "release": "rm -rf releases; mkdir -p releases/{css,fonts}; cp -af dist/css/trendmicro-ui.css releases/css/trendmicro-ui-${npm_package_version}.css; cp -af dist/css/trendmicro-ui.min.css releases/css/trendmicro-ui-${npm_package_version}.min.css; cp -af dist/fonts/* releases/fonts/; cd releases; zip -r trendmicro-ui-${npm_package_version}.zip css fonts; rm -rf css fonts",
+    "release": "rm -rf releases; mkdir -p releases/css; mkdir -p releases/fonts; cp -af dist/css/trendmicro-ui.css releases/css/trendmicro-ui-${npm_package_version}.css; cp -af dist/css/trendmicro-ui.min.css releases/css/trendmicro-ui-${npm_package_version}.min.css; cp -af dist/fonts/* releases/fonts/; cd releases; zip -r trendmicro-ui-${npm_package_version}.zip css fonts; rm -rf css fonts",
     "clean": "rm -f lib/*",
     "demo": "http-server -p 8000 docs/",
     "lint": "npm run eslint && npm run stylint",
