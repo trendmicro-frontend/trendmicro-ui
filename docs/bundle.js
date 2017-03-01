@@ -21835,7 +21835,7 @@
 	        'section',
 	        null,
 	        _react2.default.createElement(
-	            'div',
+	            'h3',
 	            { style: { margin: '16px 0' } },
 	            'List'
 	        ),
@@ -22606,4 +22606,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=bundle.js.map?52d5b73f03073a201a8a
+//# sourceMappingURL=bundle.js.map?0fcef3dd4242084684e3
