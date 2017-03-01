@@ -21835,13 +21835,9 @@
 	        'section',
 	        null,
 	        _react2.default.createElement(
-	            'h3',
+	            'div',
 	            { style: { margin: '16px 0' } },
-	            _react2.default.createElement(
-	                'h3',
-	                null,
-	                'List'
-	            )
+	            'List'
 	        ),
 	        _react2.default.createElement(
 	            'div',
@@ -22228,8 +22224,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js?-autoprefixer!./../node_modules/stylus-loader/index.js!./../node_modules/stylint-loader/index.js!./index.styl", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js?-autoprefixer!./../node_modules/stylus-loader/index.js!./../node_modules/stylint-loader/index.js!./index.styl");
+			module.hot.accept("!!../node_modules/css-loader/index.js?-autoprefixer!../node_modules/stylus-loader/index.js!../node_modules/stylint-loader/index.js!./index.styl", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js?-autoprefixer!../node_modules/stylus-loader/index.js!../node_modules/stylint-loader/index.js!./index.styl");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -22373,7 +22369,7 @@
 			};
 		},
 		isOldIE = memoize(function() {
-			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
+			return /msie [6-9]\b/.test(self.navigator.userAgent.toLowerCase());
 		}),
 		getHeadElement = memoize(function () {
 			return document.head || document.getElementsByTagName("head")[0];
@@ -22610,4 +22606,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=bundle.js.map?46b13c50fcaa0368c98e
+//# sourceMappingURL=bundle.js.map?52d5b73f03073a201a8a
