@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+'use strict';
+
+const prependFile = require('prepend-file');
+const minimist = require('minimist');
+const pkg = require(`${process.cwd()}/package.json`);
+
+function prependBanner(options) {
+	options = options || {};
+	options.name = options.name || pkg.name || 'unknown';
+	options.tag = options.tag || pkg.version || '0.0.0';
+	options.homepage = options.homepage || pkg.homepage || '';
+	options.license = options.license || pkg.license || 'unknown';
+	options.author = options.author || pkg.author.split('<')[0].trim() || '';
+	options.year = options.year || new Date().getFullYear();
+
+	const template = `/*!
+ * ${options.name} v${options.tag}
+ * ${options.homepage}
+ *
+ * Copyright (c) ${options.year} ${options.author}
+ * Licensed under the ${options.license} license
+ */\n
+`
+    const argv = minimist(process.argv.slice(2));
+    const files = argv._;
+
+	files.map(file => prependFile(file, template));
+}
+
+prependBanner({ author: 'Trend Micro Inc.' });
