@@ -3,9 +3,9 @@ import React from 'react';
 export default () => {
     return (
         <section>
-            <div style={{ margin: '16px 0' }}>
+            <h3 style={{ margin: '16px 0' }}>
                 List
-            </div>
+            </h3>
             <div className="typography-example">
                 <div className="lists-unordered">
                     <h6>Unordered lists</h6>
