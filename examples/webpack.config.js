@@ -34,7 +34,7 @@ module.exports = {
                 test: /\.styl$/,
                 use: [
                     'style-loader',
-                    'css-loader?camelCase&modules&importLoaders=1&localIdentName=[local]---[hash:base64:5]',
+                    'css-loader',
                     'stylus-loader'
                 ]
             },
