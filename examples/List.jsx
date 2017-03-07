@@ -4,7 +4,7 @@ export default () => {
     return (
         <section>
             <h3 style={{ margin: '16px 0' }}>
-                <h3>List</h3>
+                List
             </h3>
             <div className="typography-example">
                 <div className="lists-unordered">

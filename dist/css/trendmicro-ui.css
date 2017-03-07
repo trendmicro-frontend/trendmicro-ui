@@ -1,3 +1,11 @@
+/*!
+ * trendmicro-ui v0.3.0
+ * https://github.com/trendmicro-frontend/trendmicro-ui
+ *
+ * Copyright (c) 2017 Trend Micro Inc.
+ * Licensed under the MIT license
+ */
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2149,4 +2157,14 @@ p {
 }
 .text-capitalize {
   text-transform: capitalize;
+}
+i.fa,
+span.fa {
+  font-size: 14px;
+  color: #666;
+}
+i.svg,
+span.svg {
+  width: 16px;
+  height: 16px;
 }
