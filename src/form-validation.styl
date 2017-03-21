@@ -1,0 +1,33 @@
+/*== Help text
+//
+// Apply to any element you wish to create light text for placement immediately
+// below a form control. Use for general help, formatting, or instructional text.
+==*/
+.help-block {
+    display: block; // account for any element using help-block
+    margin-top: 4px;
+    color: #999999;
+    &.help-block-with-icon {
+        padding-left: 20px;
+    }
+    .icon {
+        margin-right: 4px;
+        vertical-align: top;
+        margin-top: 2px;
+        margin-left: -20px;
+    }
+}
+
+.help-block-invalid {
+    color: #db3d44;
+}
+
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-warning-red {
+    background-image: url("../images/icon/warning_red.svg");
+}

@@ -441,6 +441,14 @@ fieldset[disabled] .checkbox-inline label {
 .help-block-invalid {
   color: #db3d44;
 }
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.icon-warning-red {
+  background-image: url("../images/icon/warning_red.svg");
+}
 .input-lg {
   height: 44px;
   padding: 9px 12px;
