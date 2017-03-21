@@ -1,48 +1,132 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Font from './Font';
-import List from './List';
-import DescriptionList from './DescriptionList';
-import Text from './Text';
-import TextColor from './TextColor';
-import '../src/index.styl';
+import Typography from './Typography';
+import FormElements from './FormElements';
+import '../dist/css/trendmicro-ui.css';
 
 class App extends Component {
+
+    state = this.getDefaultState();
+
+    getDefaultState () {
+        return {
+            selectedTab: 'Typography'
+        };
+    }
+
+    handleSelectTab(activeKey) {
+        this.setState({
+            'selectedTab': activeKey
+        });
+        return false;
+    }
+
     componentDidMount() {
         document.querySelector('.site-header').style.visibility = 'visible';
     }
+
+    renderTabs() {
+        return (
+            <ul className="list-inline">
+                <li>
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            return this.handleSelectTab('Typography');
+                        }}
+                    >Typography</a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            return this.handleSelectTab('FormElements');
+                        }}
+                    >Form Elements</a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            return this.handleSelectTab('AdvancedForm');
+                        }}
+                    >Advanced Form</a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            return this.handleSelectTab('FormLayout');
+                        }}
+                    >Form Layout</a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            return this.handleSelectTab('FormSize');
+                        }}
+                    >Form Size</a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            return this.handleSelectTab('FormValidation');
+                        }}
+                    >Form Validation</a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            return this.handleSelectTab('HelpText');
+                        }}
+                    >Help Text</a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            return this.handleSelectTab('InputGroups');
+                        }}
+                    >Input Groups</a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            return this.handleSelectTab('FileUpload');
+                        }}
+                    >File Upload</a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            return this.handleSelectTab('Search');
+                        }}
+                    >Search</a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            return this.handleSelectTab('Tags');
+                        }}
+                    >Tags</a>
+                </li>
+            </ul>
+        );
+    }
+
     render() {
+        const { selectedTab } = this.state;
         return (
             <div>
-                <div className="row">
-                    <div className="col-md-12 col-lg-6 col-xxl-4" style={{ marginBottom: 20 }}>
-                        <div className="row-md-12">
-                            <Font />
-                        </div>
-                    </div>
-                    <div className="col-md-12 col-lg-6 col-xxl-4" style={{ marginBottom: 20 }}>
-                        <div className="row-md-8">
-                            <List />
-                        </div>
-                    </div>
-                    <div className="col-md-12 col-lg-6 col-xxl-4" style={{ marginBottom: 20 }}>
-                        <div className="row-md-4">
-                            <DescriptionList />
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-12 col-lg-6 col-xxl-4" style={{ marginBottom: 20 }}>
-                        <div className="row-md-4 row-lg-4 row-xxl-4">
-                            <Text />
-                        </div>
-                    </div>
-                    <div className="col-md-12 col-lg-6 col-xxl-4" style={{ marginBottom: 20 }}>
-                        <div className="row-md-4 row-lg-4 row-xxl-4">
-                            <TextColor />
-                        </div>
-                    </div>
-                </div>
+                { this.renderTabs() }
+                { selectedTab === 'Typography' && <Typography /> }
+                { selectedTab === 'FormElements' && <FormElements /> }
             </div>
         );
     }

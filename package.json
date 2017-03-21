@@ -8,9 +8,10 @@
   "scripts": {
     "prepublish": "npm run lint && npm test && npm run clean && npm run bowersync && npm run build && npm run release",
     "bowersync": "./scripts/bowersync",
-    "build": "npm run build-css; npm run build-fonts; npm run build-examples",
+    "build": "npm run build-css; npm run build-fonts; npm run build-images; npm run build-examples",
     "build-css": "mkdir -p dist/css && npm run stylus -- -o dist/css/trendmicro-ui.css src/index.styl && npm run stylus -- -c -o dist/css/trendmicro-ui.min.css src/index.styl && ./prepend-banner dist/css/*.css",
     "build-fonts": "mkdir -p dist/fonts && cp -af fonts/* dist/fonts",
+    "build-images": "mkdir -p dist/images && cp -af images/* dist/images",
     "build-examples": "cd examples; webpack",
     "release": "rm -rf releases; mkdir -p releases/css; mkdir -p releases/fonts; cp -af dist/css/trendmicro-ui.css releases/css/trendmicro-ui-${npm_package_version}.css; cp -af dist/css/trendmicro-ui.min.css releases/css/trendmicro-ui-${npm_package_version}.min.css; cp -af dist/fonts/* releases/fonts/; cd releases; zip -r trendmicro-ui-${npm_package_version}.zip css fonts; rm -rf css fonts",
     "clean": "rm -f lib/*",
