@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Typography from './Typography';
 import FormElements from './FormElements';
+import FormSize from './FormSize';
 import '../dist/css/trendmicro-ui.css';
 
 class App extends Component {
@@ -127,6 +128,7 @@ class App extends Component {
                 { this.renderTabs() }
                 { selectedTab === 'Typography' && <Typography /> }
                 { selectedTab === 'FormElements' && <FormElements /> }
+                { selectedTab === 'FormSize' && <FormSize /> }
             </div>
         );
     }

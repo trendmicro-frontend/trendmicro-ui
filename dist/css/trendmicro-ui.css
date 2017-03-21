@@ -441,6 +441,48 @@ fieldset[disabled] .checkbox-inline label {
 .help-block-invalid {
   color: #db3d44;
 }
+.input-lg {
+  height: 44px;
+  padding: 9px 12px;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 3px;
+}
+.input-sm {
+  height: 28px;
+  padding: 4px 12px;
+  font-size: 12px;
+  line-height: 18px;
+  border-radius: 3px;
+}
+.input-xs {
+  height: 22px;
+  padding: 1px 12px;
+  font-size: 12px;
+  line-height: 18px;
+  border-radius: 3px;
+}
+.input-width-mini {
+  width: 64px;
+}
+.input-width-xs {
+  width: 120px;
+}
+.input-width-sm {
+  width: 168px;
+}
+.input-width-default {
+  width: 256px;
+}
+.input-width-md {
+  width: 360px;
+}
+.input-width-lg {
+  width: 512px;
+}
+.input-width-fill {
+  width: 100%;
+}
 .col-xs-1,
 .col-sm-1,
 .col-md-1,
