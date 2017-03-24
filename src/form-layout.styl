@@ -1,0 +1,86 @@
+/*== Form groups
+//
+// Designed to help with the organization and spacing of vertical forms. For
+// horizontal forms, use the predefined grid classes.
+//
+==*/
+.form-group {
+    margin-bottom: 12px;
+}
+
+.control-label {
+    margin-top: 6px;
+    margin-bottom: 4px;
+    vertical-align: middle;
+}
+
+
+/*== Horizontal forms
+//
+// Horizontal forms are built on grid classes and allow you to create forms with
+// labels on the left and inputs on the right.
+//
+==*/
+.form-horizontal {
+    // Make form groups behave like rows
+    @media (min-width: 768px) {
+        .form-group {
+            .control-wrapper {
+                padding-left: 12px;
+                float: left;
+            }
+            > label {
+                float: left;
+            }
+        }
+    }
+
+    .form-group:before,
+    .form-group:after {
+        content: " ";
+        display: table;
+    }
+
+    .form-group:after {
+        clear: both;
+    }
+}
+
+
+/*== Inline forms
+//
+// Make forms appear inline(-block) by adding the `.form-inline` class. Inline
+// forms begin stacked on extra small (mobile) devices and then go inline when
+// viewports reach <768px.
+//
+// Requires wrapping inputs and labels with `.form-group` for proper display of
+// default HTML form controls and our custom form controls (e.g., input groups).
+//
+// Heads up! This is mixin-ed into `.navbar-form` in navbars.less.
+//
+==*/
+.form-inline {
+    // Kick in the inline
+    @media (min-width: 768px) {
+        // Inline-block all the things for "inline"
+        .form-group {
+            display: inline-block;
+            margin-bottom: 0;
+            margin-right: 16px;
+            vertical-align: middle;
+            float: left;
+            > label {
+                float: left;
+            }
+        }
+
+        // In navbar-form, allow folks to *not* use `.form-group`
+        .form-control {
+            display: inline-block;
+            width: auto; // Prevent labels from stacking above inputs in `.form-group`
+            vertical-align: middle;
+            margin-left: 12px;
+        }
+    }
+}
+
