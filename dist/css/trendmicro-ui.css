@@ -1,5 +1,5 @@
 /*!
- * trendmicro-ui v0.4.0
+ * trendmicro-ui v0.4.1
  * https://github.com/trendmicro-frontend/trendmicro-ui
  *
  * Copyright (c) 2017 Trend Micro Inc.
@@ -225,7 +225,7 @@ textarea:focus,
   -o-transition: all 0.2s linear 0s;
   -ms-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
-  outline: none;
+  outline: 0;
 }
 .form-control {
   display: block;
@@ -799,7 +799,7 @@ fieldset[disabled] .checkbox-inline label {
   margin-left: 8.33333333%;
 }
 .col-xs-offset-0 {
-  margin-left: 0%;
+  margin-left: 0;
 }
 @media (min-width: 768px) {
   .col-sm-1,
@@ -967,7 +967,7 @@ fieldset[disabled] .checkbox-inline label {
     margin-left: 8.33333333%;
   }
   .col-sm-offset-0 {
-    margin-left: 0%;
+    margin-left: 0;
   }
 }
 @media (min-width: 992px) {
@@ -1136,7 +1136,7 @@ fieldset[disabled] .checkbox-inline label {
     margin-left: 8.33333333%;
   }
   .col-md-offset-0 {
-    margin-left: 0%;
+    margin-left: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -1305,7 +1305,7 @@ fieldset[disabled] .checkbox-inline label {
     margin-left: 8.33333333%;
   }
   .col-lg-offset-0 {
-    margin-left: 0%;
+    margin-left: 0;
   }
 }
 @media (min-width: 1600px) {
@@ -1474,7 +1474,7 @@ fieldset[disabled] .checkbox-inline label {
     margin-left: 8.33333333%;
   }
   .col-xl-offset-0 {
-    margin-left: 0%;
+    margin-left: 0;
   }
 }
 @media (min-width: 1920px) {
@@ -1643,7 +1643,7 @@ fieldset[disabled] .checkbox-inline label {
     margin-left: 8.33333333%;
   }
   .col-xxl-offset-0 {
-    margin-left: 0%;
+    margin-left: 0;
   }
 }
 @media (min-width: 768px) {
