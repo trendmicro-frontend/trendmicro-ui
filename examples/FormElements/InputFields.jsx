@@ -30,7 +30,7 @@ export default () => {
                 </div>
                 <div >
                     <label>Invalid:</label>
-                    <input className="form-control form-invalid" value="trendmicro@trend" />
+                    <input className="form-control form-invalid" defaultValue="trendmicro@trend" />
                     <span className="help-block help-block-invalid help-block-with-icon">
                         <span className="icon icon-warning-red"></span>
                         Invalid email address

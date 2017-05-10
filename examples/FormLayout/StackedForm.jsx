@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../components/Buttons';
+import Checkbox from '../components/Checkbox';
 
 export default () => {
     return (
@@ -22,10 +23,7 @@ export default () => {
                     <textarea className="form-control textarea-resizable" />
                 </div>
                 <div className="form-group">
-                    <div className="checkbox">
-                        <input type="checkbox" id="stackedcheckboxs" className="input-checkbox" />
-                        <label htmlFor="stackedcheckboxs">I agree to the Terms &amp; Service</label>
-                    </div>
+                    <Checkbox className="checkbox" text="I agree to the Terms &amp; Service" />
                 </div>
                 <div className="form-group">
                     <Button btnStyle="primary">Submit</Button>

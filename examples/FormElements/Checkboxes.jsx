@@ -1,4 +1,5 @@
 import React from 'react';
+import Checkbox from '../components/Checkbox';
 
 export default () => {
     return (
@@ -15,71 +16,107 @@ export default () => {
                     <li>Align checkbox labels vertically whenever possible</li>
                     <li>Make labels clickable whenever possible</li>
                 </ul>
-                <div className="checkbox">
-                    <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs1" className="input-checkbox" />
-                    <label htmlFor="optionscheckboxs1">Normal</label>
-                </div>
-                <div className="checkbox">
-                    <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs2" className="input-checkbox hover" />
-                    <label htmlFor="optionscheckboxs2">Hover</label>
-                </div>
-                <div className="checkbox">
-                    <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs3" className="input-checkbox" checked />
-                    <label htmlFor="optionscheckboxs3">Checked</label>
-                </div>
-                <div className="checkbox">
-                    <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs4" className="input-checkbox checked checked-hover" />
-                    <label htmlFor="optionscheckboxs4">Checked hover</label>
-                </div>
-                <div className="checkbox">
-                    <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs5" className="input-checkbox checkbox-partial" />
-                    <label htmlFor="optionscheckboxs5">Partial checked</label>
-                </div>
-                <div className="checkbox disabled">
-                    <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs6" className="input-checkbox checked" disabled />
-                    <label htmlFor="optionscheckboxs6">Checked disabled</label>
-                </div>
-                <div className="checkbox disabled">
-                    <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs7" className="input-checkbox disabled" disabled />
-                    <label htmlFor="optionscheckboxs7">Disabled</label>
-                </div>
-
-                <hr />
-                <h5>Default (stacked)</h5>
-                <div className="checkbox">
-                    <input type="checkbox" name="default" id="default1" className="input-checkbox" />
-                    <label htmlFor="default1">Normal label one</label>
-                </div>
-                <div className="checkbox">
-                    <input type="checkbox" name="default" id="default2" className="input-checkbox" />
-                    <label htmlFor="default2">Normal label two</label>
-                </div>
-                <div className="checkbox disabled">
-                    <input type="checkbox" name="default" id="default3" className="input-checkbox disabled" disabled />
-                    <label htmlFor="default3">Normal label two</label>
-                </div>
-                <div className="checkbox">
-                    <input type="checkbox" name="default" id="default4" className="input-checkbox checked" />
-                    <label htmlFor="default4">Checked label</label>
-                    <div>
-                        <div>Sed posuere consecteyur est at lobortus. Aenean eu leo quam.</div>
-                        <div>Pellentesque omare sem lacinia quam venenatis vestibulum.</div>
+                <div className="row">
+                    <div className="col-md-6">
+                        <h6>HTML Checkbox</h6>
+                        <label className="checkbox">
+                            <input type="checkbox" name="optionscheckboxs" />
+                            Normal
+                        </label>
+                        <label className="checkbox">
+                            <input type="checkbox" name="optionscheckboxs" defaultChecked />
+                            Checked
+                        </label>
+                        <label className="checkbox">
+                            <input type="checkbox" name="optionscheckboxs" ref={elem => elem && (elem.indeterminate = true)} />
+                            Partial checked
+                        </label>
+                        <label className="checkbox disabled">
+                            <input type="checkbox" name="optionscheckboxs" defaultChecked disabled />
+                            Checked disabled
+                        </label>
+                        <label className="checkbox disabled">
+                            <input type="checkbox" name="optionscheckboxs" disabled />
+                            Disabled
+                        </label>
+                    </div>
+                    <div className="col-md-6">
+                        <h6>React Checkbox</h6>
+                        <Checkbox className="checkbox" text="Normal" />
+                        <Checkbox className="checkbox" text="Checked" defaultChecked />
+                        <Checkbox className="checkbox" text="Partial checked" indeterminate />
+                        <Checkbox className="checkbox" text="Checked disabled" defaultChecked disabled />
+                        <Checkbox className="checkbox" text="Disabled" disabled />
                     </div>
                 </div>
 
-                <hr />
-                <h5>Inline</h5>
-                <div className="checkbox-inline">
-                    <input type="checkbox" name="inline" id="inline1" className="input-checkbox" />
-                    <label htmlFor="inline1">Normal label</label>
+                <div className="row">
+                    <div className="col-md-12">
+                        <hr />
+                        <h5>Default (stacked)</h5>
+                    </div>
+                    <div className="col-md-6">
+                        <h6>HTML Checkbox</h6>
+                        <label className="checkbox">
+                            <input type="checkbox" name="default" />
+                            Normal label one
+                        </label>
+                        <label className="checkbox">
+                            <input type="checkbox" name="default" />
+                            Normal label two
+                        </label>
+                        <label className="checkbox disabled">
+                            <input type="checkbox" name="default" disabled />
+                            Disabled label
+                        </label>
+                        <label className="checkbox">
+                            <input type="checkbox" name="default" defaultChecked />
+                            Checked label
+                            <div>
+                                <div>Sed posuere consecteyur est at lobortus. Aenean eu leo quam.</div>
+                                <div>Pellentesque omare sem lacinia quam venenatis vestibulum.</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div className="col-md-6">
+                        <h6>React Checkbox</h6>
+                        <Checkbox className="checkbox" text="Normal label one" />
+                        <Checkbox className="checkbox" text="Normal label two" />
+                        <Checkbox className="checkbox" text="Disabled label" disabled />
+                        <Checkbox className="checkbox" text="Checked label" defaultChecked>
+                            <div>
+                                <div>Sed posuere consecteyur est at lobortus. Aenean eu leo quam.</div>
+                                <div>Pellentesque omare sem lacinia quam venenatis vestibulum.</div>
+                            </div>
+                        </Checkbox>
+                    </div>
                 </div>
-                <div className="checkbox-inline disabled">
-                    <input type="checkbox" name="inline" id="inline2" className="input-checkbox disabled" disabled />
-                    <label htmlFor="inline2">Disabled label</label>
-                </div>
-                <div className="checkbox-inline">
-                    <input type="checkbox" name="inline" id="inline3" className="input-checkbox checked" />
-                    <label htmlFor="inline3">Checked label</label>
+                <div className="row">
+                    <div className="col-md-12">
+                        <hr />
+                        <h5>Inline</h5>
+                    </div>
+                    <div className="col-md-6">
+                        <h6>HTML Checkbox</h6>
+                        <label className="checkbox-inline">
+                            <input type="checkbox" name="inline" />
+                            Normal label
+                        </label>
+                        <label className="checkbox-inline disabled">
+                            <input type="checkbox" name="inline" disabled />
+                            Disabled label
+                        </label>
+                        <label className="checkbox-inline">
+                            <input type="checkbox" name="inline" defaultChecked />
+                            Checked label
+                        </label>
+                    </div>
+                    <div className="col-md-6">
+                        <h6>React Checkbox</h6>
+                        <Checkbox className="checkbox-inline" text="Normal label" />
+                        <Checkbox className="checkbox-inline" text="Disabled label" disabled />
+                        <Checkbox className="checkbox-inline" text="Checked label" defaultChecked />
+                    </div>
                 </div>
             </div>
         </section>

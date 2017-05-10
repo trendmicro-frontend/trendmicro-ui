@@ -19,7 +19,7 @@ export default () => {
                     </div>
                 </div>
                 <div className="col-md-12" style={{ marginBottom: 20 }}>
-                    <div className="row-md-11">
+                    <div className="row-md-12">
                         <RadioButtons />
                     </div>
                 </div>

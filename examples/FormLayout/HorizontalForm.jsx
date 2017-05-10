@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../components/Buttons';
+import Checkbox from '../components/Checkbox';
 
 export default () => {
     return (
@@ -30,10 +31,7 @@ export default () => {
                 </div>
                 <div className="form-group">
                     <div className="control-wrapper control-wrapper-offset">
-                        <div className="checkbox">
-                            <input type="checkbox" id="horizontalcheckboxs" className="input-checkbox" />
-                            <label htmlFor="horizontalcheckboxs">I agree to the Terms &amp; Service</label>
-                        </div>
+                        <Checkbox className="checkbox" text="I agree to the Terms &amp; Service" />
                     </div>
                 </div>
                 <div className="form-group">

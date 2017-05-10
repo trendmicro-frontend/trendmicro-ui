@@ -46,7 +46,6 @@ label {
 input[type="radio"],
 input[type="checkbox"] {
     margin: 4px 0 0;
-    margin-top: 1px \9; // IE8-9
     line-height: normal;
 }
 
@@ -177,19 +176,29 @@ textarea:focus,
 .checkbox-inline {
     position: relative;
     display: block;
+    min-height: 20px; // Ensure the input doesn't jump when there is no text
+    padding: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    color: #000000;
+    line-height: 20px;
 
-    label {
-        min-height: 20px; // Ensure the input doesn't jump when there is no text
-        padding: 0;
-        margin-bottom: 0;
+    input[type="radio"],
+    input[type="checkbox"] {
         cursor: pointer;
-        color: #000000;
-        line-height: 20px;
+        margin-right: 8px;
     }
 }
 
 input[type="radio"],
-input[type="checkbox"],
+input[type="checkbox"] {
+    &[disabled],
+    &.disabled,
+    fieldset[disabled] & {
+        cursor: not-allowed;
+    }
+}
+
 .radio,
 .radio-inline,
 .checkbox,
@@ -197,21 +206,9 @@ input[type="checkbox"],
     &[disabled],
     &.disabled,
     fieldset[disabled] & {
+        color: rgba(0, 0, 0, 0.4);  /*opacity: .4;*/
         cursor: not-allowed;
-        label {
-            opacity: .4;
-            cursor: not-allowed;
-        }
     }
-}
-
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
-    position: absolute;
-    margin-left: -20px;
-    margin-top: 4px \9;
 }
 
 .radio + .radio,
@@ -229,108 +226,9 @@ input[type="checkbox"],
     cursor: pointer;
     float: left;
 }
+
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
     margin-left: 16px; // space out consecutive inline controls
-}
-
-
-/*== Customized Radio and Checkbox ==*/
-.input-radio,
-.input-checkbox {
-    display: none;
-}
-
-.radio label:before,
-.radio-inline label:before {
-    border-radius: 50%;
-}
-
-.checkbox label:before,
-.checkbox-inline label:before {
-    border-radius: 2px;
-}
-
-.input-radio + label:before,
-.input-checkbox + label:before {
-    content: "";
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    margin-right: 8px;
-    border: 1px solid #999999;
-    vertical-align: top;
-    margin-top: 3px;
-    background-color: #ffffff;
-}
-
-// Radio button checked
-.radio .checked + label:before,
-.radio-inline .checked + label:before,
-.input-radio:checked + label:before {
-    content: "\2022";
-    color: #ffffff;
-    font-size: 16px;
-    text-align: center;
-    line-height: 14px;
-    border: 1px solid #0096cc;
-    background-color: #0096cc;
-    transition: background-color .2s;
-}
-
-// Checkbox checked
-.checkbox .checked + label:before,
-.checkbox-inline .checked + label:before,
-.input-checkbox:checked + label:before {
-    content: "";
-    background-image: url(../images/icon/component_check.svg);
-    background-position: center;
-    border: 1px solid #0096cc;
-    background-color: #0096cc;
-    transition: .2s;
-}
-
-// Partial checked
-.checkbox-partial + label:before {
-    content: "\25A0";
-    color: #0096cc;
-    font-size: 13px;
-    text-align: center;
-    line-height: 10px;
-    transition: .2s;
-}
-
-// Hover
-.input-radio + label:hover::before,
-.input-checkbox + label:hover::before,
-.radio .hover + label:before,
-.radio-inline .hover + label:before,
-.checkbox .hover + label:before,
-.checkbox-inline .hover + label:before {
-    border: 1px solid #0096cc;
-}
-
-// Checked:hover
-.input-radio:checked + label:hover::before,
-.radio .checked-hover + label:before,
-.radio .checked + label:hover::before,
-.radio-inline .checked-hover + label:before,
-.radio-inline .checked + label:hover::before,
-.input-checkbox:checked + label:hover::before,
-.checkbox .checked-hover + label:before,
-.checkbox .checked + label:hover::before,
-.checkbox-inline .checked-hover + label:before,
-.checkbox-inline .checked + label:hover::before {
-    border: 1px solid #33ABD6;
-    background-color: #33ABD6;
-}
-
-// Disabled
-.radio .disabled + label:before,
-.radio-inline .disabled + label:before,
-.checkbox .disabled + label:before,
-.checkbox-inline .disabled + label:before  {
-    border: 1px solid #999999;
-    background-color: #dddddd;
 }
 

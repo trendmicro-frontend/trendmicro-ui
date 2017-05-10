@@ -1,4 +1,5 @@
 import React from 'react';
+import Checkbox from '../components/Checkbox';
 
 export default () => {
     return (
@@ -23,9 +24,11 @@ export default () => {
                 </div>
                 <div>
                     <label htmlFor="errorTextarea">Text area:</label>
-                    <textarea id="errorTextarea" className="form-control textarea-normal textarea-resize form-invalid">
-                        This text area has exceed the character limit by 100 characters. The user can still continue to type after reaching the limit, but the field is invalid.
-                    </textarea>
+                    <textarea
+                        id="errorTextarea"
+                        className="form-control textarea-normal textarea-resize form-invalid"
+                        defaultValue="This text area has exceed the character limit by 100 characters. The user can still continue to type after reaching the limit, but the field is invalid."
+                    />
                     <span className="help-block help-block-invalid help-block-with-icon">
                         <span className="icon icon-warning-red" />
                         152/100 character limit.
@@ -34,18 +37,9 @@ export default () => {
                 <div>
                     <label className="label-required">Checkboxes:</label>
                     <div>
-                        <div className="checkbox">
-                            <input type="checkbox" name="optionscheckboxs" id="validationcheckboxs1" className="input-checkbox" />
-                            <label htmlFor="validationcheckboxs1">Item 1</label>
-                        </div>
-                        <div className="checkbox">
-                            <input type="checkbox" name="optionscheckboxs" id="validationcheckboxs2" className="input-checkbox" />
-                            <label htmlFor="validationcheckboxs2">Item 2</label>
-                        </div>
-                        <div className="checkbox">
-                            <input type="checkbox" name="optionscheckboxs" id="validationcheckboxs3" className="input-checkbox" />
-                            <label htmlFor="validationcheckboxs3">Item 3</label>
-                        </div>
+                        <Checkbox className="checkbox" name="optionscheckboxs" text="Item 1" />
+                        <Checkbox className="checkbox" name="optionscheckboxs" text="Item 2" />
+                        <Checkbox className="checkbox" name="optionscheckboxs" text="Item 3" />
                     </div>
                     <span className="help-block help-block-invalid help-block-with-icon">
                         <span className="icon icon-warning-red" />
