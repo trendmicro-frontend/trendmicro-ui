@@ -315,6 +315,7 @@ textarea.textarea-resizable {
 .checkbox-inline input[type="checkbox"] {
   cursor: pointer;
   margin-right: 8px;
+  vertical-align: top;
 }
 input[type="radio"][disabled],
 input[type="checkbox"][disabled],
