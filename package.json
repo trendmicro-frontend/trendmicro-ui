@@ -20,7 +20,7 @@
     "eslint": "eslint examples",
     "stylint": "stylint src",
     "stylus": "stylus -u nib --import node_modules/nib/lib/nib/index.styl",
-    "test": "tap test/*.js --coverage --nyc-arg=--require --nyc-arg=babel-register --nyc-arg=--require --nyc-arg=babel-polyfill",
+    "test": "tap test/*.js --node-arg=--require --node-arg=babel-register --node-arg=--require --node-arg=babel-polyfill",
     "coveralls": "tap test/*.js --coverage --coverage-report=text-lcov --nyc-arg=--require --nyc-arg=babel-register --nyc-arg=--require --nyc-arg=babel-polyfill | coveralls",
     "dev": "cd examples; webpack-dev-server --hot --inline --host 0.0.0.0 --port 8000 --content-base ../docs"
   },
