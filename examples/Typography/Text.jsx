@@ -8,7 +8,7 @@ export default () => {
             </h3>
             <div className="typography-example">
                 <p>
-                    Use &lt;a&gt; tag to show <a href="">hypertext</a>.
+                    Use &lt;a&gt; tag to show <a style={{ textDecoration: 'underline' }}>hypertext</a>.
                 </p>
                 <p>
                     <del>Strike a line through text to show that it is deleted.</del>
