@@ -1,5 +1,5 @@
 /*!
- * trendmicro-ui v0.4.3
+ * trendmicro-ui v0.4.4
  * https://github.com/trendmicro-frontend/trendmicro-ui
  *
  * Copyright (c) 2017 Trend Micro Inc.
@@ -38,7 +38,7 @@ textarea {
 }
 a {
   color: #0096cc;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover,
 a:focus {
@@ -337,7 +337,7 @@ fieldset[disabled] .radio,
 fieldset[disabled] .radio-inline,
 fieldset[disabled] .checkbox,
 fieldset[disabled] .checkbox-inline {
-  color: rgba(0,0,0,0.4); /*opacity: .4;*/
+  color: rgba(0,0,0,0.4);
   cursor: not-allowed;
 }
 .radio + .radio,
