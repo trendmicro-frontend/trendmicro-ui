@@ -5,10 +5,12 @@
 *:after {
     box-sizing: border-box;
 }
+
 html {
     font-size: 13px;
     -webkit-tap-highlight-color: #222;
 }
+
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 13px;
@@ -16,6 +18,7 @@ body {
     color: #222222;
     background-color: #fff;
 }
+
 input,
 button,
 select,
@@ -24,6 +27,7 @@ textarea {
     font-size: inherit;
     line-height: inherit;
 }
+
 a {
     color: #0096cc;
     text-decoration: none;
@@ -36,18 +40,22 @@ a:focus {
 a:focus {
     outline: 0;
 }
+
 figure {
     margin: 0;
 }
+
 img {
     vertical-align: middle;
 }
+
 hr {
     margin-top: 12px;
     margin-bottom: 12px;
     border: 0;
     border-top: 1px solid #ddd;
 }
+
 [role="button"] {
     // iOS "clickable elements" fix for role="button"
     //
@@ -55,4 +63,50 @@ hr {
     // for traditionally non-focusable elements with role="button"
     // see https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
     cursor: pointer;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    min-width: 0;
+    margin-bottom: 24px;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #222222;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 4px;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+    margin-bottom: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 4px 0 0;
+    line-height: normal;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #0096cc;
+    transition: all .2s linear 0s;
+    outline: 0;
 }

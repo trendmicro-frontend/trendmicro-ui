@@ -1,0 +1,60 @@
+//
+// Checkbox Container
+//
+.checkbox,
+.checkbox-inline {
+    position: relative;
+    display: block;
+}
+
+.checkbox label,
+.checkbox-inline label {
+    min-height: 20px;
+    padding: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    color: #000;
+    line-height: 20px;
+}
+
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+.checkbox + .checkbox {
+    margin-top: 8px;
+}
+
+.checkbox-inline {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-weight: normal;
+    cursor: pointer;
+    float: left;
+}
+
+.checkbox-inline + .checkbox-inline {
+    margin-left: 16px;
+}
+
+input[type="checkbox"][disabled],
+input[type="checkbox"].disabled,
+fieldset[disabled] input[type="checkbox"] {
+    cursor: not-allowed;
+}
+
+.checkbox-inline.disabled,
+fieldset[disabled] .checkbox-inline {
+    cursor: not-allowed;
+}
+
+.checkbox.disabled label,
+.checkbox-inline.disabled label,
+fieldset[disabled] .checkbox label,
+fieldset[disabled] .checkbox-inline label {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

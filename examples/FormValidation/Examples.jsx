@@ -36,10 +36,14 @@ export default () => {
                 </div>
                 <div>
                     <label className="label-required">Checkboxes:</label>
-                    <div>
-                        <Checkbox className="checkbox" name="optionscheckboxs" text="Item 1" />
-                        <Checkbox className="checkbox" name="optionscheckboxs" text="Item 2" />
-                        <Checkbox className="checkbox" name="optionscheckboxs" text="Item 3" />
+                    <div className="checkbox">
+                        <Checkbox name="optionscheckboxs">Item 1</Checkbox>
+                    </div>
+                    <div className="checkbox">
+                        <Checkbox name="optionscheckboxs">Item 2</Checkbox>
+                    </div>
+                    <div className="checkbox">
+                        <Checkbox name="optionscheckboxs">Item 3</Checkbox>
                     </div>
                     <span className="help-block help-block-invalid help-block-with-icon">
                         <span className="icon icon-warning-red" />

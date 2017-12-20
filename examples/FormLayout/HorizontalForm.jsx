@@ -31,7 +31,9 @@ export default () => {
                 </div>
                 <div className="form-group">
                     <div className="control-wrapper control-wrapper-offset">
-                        <Checkbox className="checkbox" text="I agree to the Terms &amp; Service" />
+                        <div className="checkbox">
+                            <Checkbox>I agree to the Terms &amp; Service</Checkbox>
+                        </div>
                     </div>
                 </div>
                 <div className="form-group">

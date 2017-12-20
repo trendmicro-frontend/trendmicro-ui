@@ -5,7 +5,7 @@ import FormElements from './FormElements';
 import FormLayout from './FormLayout';
 import FormSize from './FormSize';
 import FormValidation from './FormValidation';
-import '../dist/css/trendmicro-ui.css';
+import '../src/index.styl';
 
 class App extends Component {
 
@@ -14,15 +14,9 @@ class App extends Component {
     tabs = [
         { id: 'Typography', text: 'Typography', component: <Typography /> },
         { id: 'FormElements', text: 'Form Elements', component: <FormElements /> },
-        { id: 'AdvancedForm', text: 'Advanced Form' },
         { id: 'FormLayout', text: 'Form Layout', component: <FormLayout /> },
         { id: 'FormSize', text: 'Form Size', component: <FormSize /> },
-        { id: 'FormValidation', text: 'Form Validation', component: <FormValidation /> },
-        { id: 'HelpText', text: 'Help Text' },
-        { id: 'InputGroups', text: 'Input Groups' },
-        { id: 'FileUpload', text: 'File Upload' },
-        { id: 'Search', text: 'Search' },
-        { id: 'Tags', text: 'Tags' }
+        { id: 'FormValidation', text: 'Form Validation', component: <FormValidation /> }
     ];
 
     getDefaultState () {

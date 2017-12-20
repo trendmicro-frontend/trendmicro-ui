@@ -23,7 +23,9 @@ export default () => {
                     <textarea className="form-control textarea-resizable" />
                 </div>
                 <div className="form-group">
-                    <Checkbox className="checkbox" text="I agree to the Terms &amp; Service" />
+                    <div className="checkbox">
+                        <Checkbox>I agree to the Terms &amp; Service</Checkbox>
+                    </div>
                 </div>
                 <div className="form-group">
                     <Button btnStyle="primary">Submit</Button>

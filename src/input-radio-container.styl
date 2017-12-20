@@ -1,0 +1,60 @@
+//
+// Radio Container
+//
+.radio,
+.radio-inline {
+    position: relative;
+    display: block;
+}
+
+.radio label,
+.radio-inline label {
+    min-height: 20px;
+    padding: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    color: #000;
+    line-height: 20px;
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"] {
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+.radio + .radio {
+    margin-top: 8px;
+}
+
+.radio-inline {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-weight: normal;
+    cursor: pointer;
+    float: left;
+}
+
+.radio-inline + .radio-inline {
+    margin-left: 16px;
+}
+
+input[type="radio"][disabled],
+input[type="radio"].disabled,
+fieldset[disabled] input[type="radio"] {
+    cursor: not-allowed;
+}
+
+.radio-inline.disabled,
+fieldset[disabled] .radio-inline {
+    cursor: not-allowed;
+}
+
+.radio.disabled label,
+.radio-inline.disabled label,
+fieldset[disabled] .radio label,
+fieldset[disabled] .radio-inline label {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

@@ -21,29 +21,53 @@ export default () => {
                 <div className="row">
                     <div className="col-md-6">
                         <h6>HTML Radio Button</h6>
-                        <label className="radio">
-                            <input type="radio" />
-                            Normal
-                        </label>
-                        <label className="radio">
-                            <input type="radio" defaultChecked />
-                            Checked
-                        </label>
-                        <label className="radio disabled">
-                            <input type="radio" defaultChecked disabled />
-                            Checked disabled
-                        </label>
-                        <label className="radio disabled">
-                            <input type="radio" disabled />
-                            Disabled
-                        </label>
+                        <div className="radio">
+                            <label>
+                                <input type="radio" />
+                                Normal
+                            </label>
+                        </div>
+                        <div className="radio">
+                            <label>
+                                <input type="radio" defaultChecked />
+                                Checked
+                            </label>
+                        </div>
+                        <div className="radio disabled">
+                            <label>
+                                <input type="radio" defaultChecked disabled />
+                                Checked disabled
+                            </label>
+                        </div>
+                        <div className="radio disabled">
+                            <label>
+                                <input type="radio" disabled />
+                                Disabled
+                            </label>
+                        </div>
                     </div>
                     <h6>React Radio Button</h6>
                     <div className="col-md-6">
-                        <RadioButton className="radio" text="Normal" />
-                        <RadioButton className="radio" text="Checked" defaultChecked />
-                        <RadioButton className="radio" text="Checked disabled" defaultChecked disabled />
-                        <RadioButton className="radio" text="Disabled" disabled />
+                        <div className="radio">
+                            <RadioButton>
+                                Normal
+                            </RadioButton>
+                        </div>
+                        <div className="radio">
+                            <RadioButton defaultChecked>
+                                Checked
+                            </RadioButton>
+                        </div>
+                        <div className="radio">
+                            <RadioButton defaultChecked disabled>
+                                Checked disabled
+                            </RadioButton>
+                        </div>
+                        <div className="radio">
+                            <RadioButton disabled>
+                                Disabled
+                            </RadioButton>
+                        </div>
                     </div>
                 </div>
                 <div className="row">
@@ -53,38 +77,61 @@ export default () => {
                     </div>
                     <div className="col-md-6">
                         <h6>HTML Radio Button</h6>
-                        <label className="radio">
-                            <input type="radio" name="stackedRadios" />
-                            Normal label one
-                        </label>
-                        <label className="radio">
-                            <input type="radio" name="stackedRadios" />
-                            Normal label two
-                        </label>
-                        <label className="radio disabled">
-                            <input type="radio" name="stackedRadios" disabled />
-                            Disabled label
-                        </label>
-                        <label className="radio">
-                            <input type="radio" name="stackedRadios" defaultChecked />
-                            Checked label
+                        <div className="radio">
+                            <label>
+                                <input type="radio" name="stackedRadios" />
+                                Normal label one
+                            </label>
+                        </div>
+                        <div className="radio">
+                            <label>
+                                <input type="radio" name="stackedRadios" />
+                                Normal label two
+                            </label>
+                        </div>
+                        <div className="radio disabled">
+                            <label>
+                                <input type="radio" name="stackedRadios" disabled />
+                                Disabled label
+                            </label>
+                        </div>
+                        <div className="radio">
+                            <label>
+                                <input type="radio" name="stackedRadios" defaultChecked />
+                                Checked label
+                            </label>
                             <div>
                                 <div>Sed posuere consecteyur est at lobortus. Aenean eu leo quam.</div>
                                 <div>Pellentesque omare sem lacinia quam venenatis vestibulum.</div>
                             </div>
-                        </label>
+                        </div>
                     </div>
                     <div className="col-md-6">
                         <h6>React Radio Button</h6>
-                        <RadioButton className="radio" name="stackedRadios2" text="Normal label one" />
-                        <RadioButton className="radio" name="stackedRadios2" text="Normal label two" />
-                        <RadioButton className="radio" name="stackedRadios2" text="Disabled label" disabled />
-                        <RadioButton className="radio" name="stackedRadios2" text="Checked label" defaultChecked>
+                        <div className="radio">
+                            <RadioButton name="stackedRadios2">
+                                Normal label one
+                            </RadioButton>
+                        </div>
+                        <div className="radio">
+                            <RadioButton name="stackedRadios2">
+                                Normal label two
+                            </RadioButton>
+                        </div>
+                        <div className="radio">
+                            <RadioButton name="stackedRadios2" disabled>
+                                Disabled label
+                            </RadioButton>
+                        </div>
+                        <div className="radio">
+                            <RadioButton name="stackedRadios2" defaultChecked>
+                                Checked label
+                            </RadioButton>
                             <div>
                                 <div>Sed posuere consecteyur est at lobortus. Aenean eu leo quam.</div>
                                 <div>Pellentesque omare sem lacinia quam venenatis vestibulum.</div>
                             </div>
-                        </RadioButton>
+                        </div>
                     </div>
                 </div>
                 <div className="row">
@@ -94,24 +141,42 @@ export default () => {
                     </div>
                     <div className="col-md-6">
                         <h6>HTML Radio Button</h6>
-                        <label className="radio-inline">
-                            <input type="radio" name="inline" />
-                            Normal label
-                        </label>
-                        <label className="radio-inline disabled">
-                            <input type="radio" name="inline" disabled />
-                            Disabled label
-                        </label>
-                        <label className="radio-inline">
-                            <input type="radio" name="inline" defaultChecked />
-                            Checked label
-                        </label>
+                        <div className="radio-inline">
+                            <label>
+                                <input type="radio" name="inline" />
+                                Normal label
+                            </label>
+                        </div>
+                        <div className="radio-inline disabled">
+                            <label>
+                                <input type="radio" name="inline" disabled />
+                                Disabled label
+                            </label>
+                        </div>
+                        <div className="radio-inline">
+                            <label>
+                                <input type="radio" name="inline" defaultChecked />
+                                Checked label
+                            </label>
+                        </div>
                     </div>
                     <div className="col-md-6">
                         <h6>React Radio Button</h6>
-                        <RadioButton className="radio-inline" name="inline2" text="Normal label" />
-                        <RadioButton className="radio-inline" name="inline2" text="Disabled label" disabled />
-                        <RadioButton className="radio-inline" name="inline2" text="Checked label" defaultChecked />
+                        <div className="radio-inline">
+                            <RadioButton name="inline2">
+                                Normal label
+                            </RadioButton>
+                        </div>
+                        <div className="radio-inline">
+                            <RadioButton name="inline2" disabled>
+                                Disabled label
+                            </RadioButton>
+                        </div>
+                        <div className="radio-inline">
+                            <RadioButton name="inline2" defaultChecked>
+                                Checked label
+                            </RadioButton>
+                        </div>
                     </div>
                 </div>
             </div>
