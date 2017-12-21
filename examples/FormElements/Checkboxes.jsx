@@ -33,7 +33,15 @@ export default () => {
                         </div>
                         <div className="checkbox">
                             <label>
-                                <input type="checkbox" name="optionscheckboxs" ref={elem => elem && (elem.indeterminate = true)} />
+                                <input
+                                    ref={c => {
+                                        if (c) {
+                                            c.indeterminate = true;
+                                        }
+                                    }}
+                                    type="checkbox"
+                                    name="optionscheckboxs"
+                                />
                                 Partial checked
                             </label>
                         </div>
