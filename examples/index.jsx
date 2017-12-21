@@ -8,7 +8,6 @@ import FormValidation from './FormValidation';
 import '../src/index.styl';
 
 class App extends Component {
-
     state = this.getDefaultState();
 
     tabs = [
