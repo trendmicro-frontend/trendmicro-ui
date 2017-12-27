@@ -1,6 +1,6 @@
 {
   "name": "trendmicro-ui",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "CSS styles for creating a user interface according to Trend Micro UI style guides.",
   "files": [
     "dist"
