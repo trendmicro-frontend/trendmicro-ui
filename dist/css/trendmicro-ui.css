@@ -1,8 +1,8 @@
 /*!
- * trendmicro-ui v0.5.1
+ * trendmicro-ui v0.5.2
  * https://github.com/trendmicro-frontend/trendmicro-ui
  *
- * Copyright (c) 2017 Trend Micro Inc.
+ * Copyright (c) 2018 Trend Micro Inc.
  * Licensed under the MIT license
  */
 
@@ -2067,7 +2067,7 @@ textarea.form-control {
 }
 h1,
 .h1 {
-  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 200;
   font-size: 26px;
   line-height: 1.2;
@@ -2089,7 +2089,7 @@ h1 .small,
 }
 h2,
 .h2 {
-  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 200;
   font-size: 24px;
   line-height: 1.2;
@@ -2111,7 +2111,7 @@ h2 .small,
 }
 h3,
 .h3 {
-  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 200;
   font-size: 18px;
   line-height: 1.2;
@@ -2162,7 +2162,7 @@ h6,
   margin-bottom: 10px;
 }
 .title {
-  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 200;
   font-size: 18px;
   line-height: 1.2;
@@ -2172,7 +2172,7 @@ h6,
   -moz-osx-font-smoothing: grayscale;
 }
 .display1 {
-  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 200;
   font-size: 24px;
   line-height: 1.2;
@@ -2182,7 +2182,7 @@ h6,
   -moz-osx-font-smoothing: grayscale;
 }
 .display2 {
-  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 200;
   font-size: 26px;
   line-height: 1.2;
@@ -2192,7 +2192,7 @@ h6,
   -moz-osx-font-smoothing: grayscale;
 }
 .display3 {
-  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-family: Interstate-Light, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 200;
   font-size: 32px;
   line-height: 1.2;
@@ -2202,7 +2202,7 @@ h6,
   -moz-osx-font-smoothing: grayscale;
 }
 .display4 {
-  font-family: Interstate-ExtraLight, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+  font-family: Interstate-ExtraLight, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 200;
   font-size: 40px;
   line-height: 1.2;
