@@ -1,13 +1,6 @@
 {
   "name": "trendmicro-ui",
   "description": "CSS styles for creating a user interface according to Trend Micro UI style guides.",
-  "authors": [
-    {
-      "name": "Cheton Wu",
-      "email": "cheton_wu@trend.com.tw",
-      "homepage": "https://github.com/cheton"
-    }
-  ],
   "theme": "minimalism",
   "homepage": "https://github.com/trendmicro-frontend/trendmicro-ui",
   "snapshots": [
